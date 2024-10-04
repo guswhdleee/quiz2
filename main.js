@@ -50,7 +50,8 @@ search.addEventListener("click", function (e) {
   xhr.onload = function () {
     let result = xhr.responseText;
     let resultObj = JSON.parse(result);
-    for (let i = 0; i <= 2; i++)
+    resultNode.innerText = "";
+    for (let i = 0; i <= resultObj.articles.length; i++)
       writeNews(
         resultObj.articles[i].title,
         resultObj.articles[i].author,
