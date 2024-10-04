@@ -57,7 +57,7 @@ search.addEventListener("click", function (e) {
         resultObj.articles[i].publishedAt,
         resultObj.articles[i].url,
         resultObj.articles[i].urlToImage,
-        resultObj.articles[i].content
+        resultObj.articles[i].description
       );
   };
   xhr.send();
